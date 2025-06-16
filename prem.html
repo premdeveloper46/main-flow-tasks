@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome | Prem kumar s Landing page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'sora sans';
+      background-color: #000000;
+      color: #000000;
+      line-height: 1.6;
+    }
+
+    /* Navigation */
+    .navbar {
+      background-color: #000000;
+      border-bottom: 1px solid #eaeaea;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar h1 {
+      margin: 0;
+      font-size: 1.6rem;
+      color: #00ac2b;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-item {
+      position: relative;
+    }
+
+    .nav-item > a {
+      color: #21f805;
+      text-decoration: none;
+      padding: 0.5rem;
+      transition: color 0.3s;
+    }
+
+    .nav-item > a:hover {
+      color: #02f70e;
+    }
+
+    .dropdown {
+      display: none;
+      position: absolute;
+      background-color: #18f504;
+      top: 2.5rem;
+      left: 0;
+      min-width: 150px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .dropdown a {
+      display: block;
+      padding: 0.75rem 1rem;
+      color: #333;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .dropdown a:hover {
+      background-color: #0e0d0d7a;
+    }
+
+    .nav-item:hover .dropdown {
+      display: block;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(to right, #56c025, #031b01);
+      color: white;
+      text-align: center;
+      padding: 6rem 2rem;
+    }
+
+    .hero h2 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Features */
+    .features {
+      padding: 4rem 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .feature {
+      background-color: #2fbe03be;
+      border: 1px solid #080808;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.04);
+      text-align: center;
+    }
+
+    .feature h3 {
+      color: #000000;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #179b0b;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #000000;
+    }
+
+    @media (max-width: 600px) {
+      .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .hero h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <h1>Prem's landing page </h1>
+    <div class="nav-links">
+      <div class="nav-item"><a href="#">Home</a></div>
+      <div class="nav-item"><a href="#">Who We Are</a></div>
+      <div class="nav-item">
+        <a href="#">What We Do ▾</a>
+        <div class="dropdown">
+          <a href="#">Design</a>
+          <a href="#">Development</a>
+          <a href="#">Brand Strategy</a>
+        </div>
+      </div>
+      <div class="nav-item"><a href="#">Say Hello</a></div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h2>Hey there! 👋 I am Prem Kumar S.</h2>
+    <p>This is my personal landing page, where I used Html and CSS to create a simple, clean design that was given to me as a task.</p>
+   
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+    <div class="feature">
+      <h3>✨ Wat i used to create this page</h3>
+      <p>I created a simple, modern landing page using only HTML and CSS — no JavaScript or frameworks. It includes a CSS-only dropdown, a friendly hero section, and features written as user tasks to keep things engaging and easy to use.</p>
+    </div>
+    <div class="feature">
+      <h3>⚡ Fast Performance</h3>
+      <p>I built this landing page to feel fast and smooth. It’s made with just HTML and CSS — no heavy code, no waiting. The goal was to respect people’s time and make sure everything loads quickly on any device.
+    </div>
+    <div class="feature">
+      <h3>💬 Real Support</h3>
+      <p>Our support team is made up of real people who are dedicated to helping you succeed. Whether you have a question, run into an issue, or need guidance, we respond quickly and clearly. No automated replies — just knowledgeable assistance when you need it most.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    Made By Prem Kumar s, 23stcs53 from kristu jayanti college ,Doing my B.sc stastics and computer science.
+  </footer>
+
+</body>
+</html>
